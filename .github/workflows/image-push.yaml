@@ -1,6 +1,9 @@
-name: CI
+name: Docker image push
 
-on: [push]
+on:
+  push:
+    paths:
+    - 'Dockerfile'
 
 jobs:
   push_image:
