@@ -7,7 +7,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     container:
-      ghcr.io/${{ gihub.repository }}:main
+      image: ghcr.io/${{ gihub.repository }}:main
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
